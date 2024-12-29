@@ -193,3 +193,37 @@ button#start-next-team {
         font-size: 1.2rem;
     }
 }
+
+/* Общи стилове за всички устройства */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+/* Промени за мобилни устройства (екран по-малък от 768px) */
+@media screen and (max-width: 768px) {
+    body {
+        background-color: #e0f7fa; /* Променен фон за мобилни устройства */
+    }
+
+    header h1 {
+        font-size: 24px; /* По-малък шрифт за заглавието */
+        text-align: center; /* Центриране на заглавието */
+    }
+
+    .container {
+        padding: 10px; /* Намаляване на вътрешния отстъп */
+    }
+
+    .team-form {
+        margin-bottom: 15px; /* Увеличаване на разстоянието между формите */
+    }
+
+    button {
+        font-size: 16px; /* По-голям текст за бутоните */
+        width: 100%; /* Бутоните да заемат цялата ширина */
+    }
+}
+

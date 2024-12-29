@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Association Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Obicham Lia</h1>
+    </header>
+    
+    
+    <div class="container">
+        <!-- Setup Teams Section -->
+        <div id="setup-teams">
+            <label for="team-count">Number of Teams:</label>
+            <input type="number" id="team-count" min="1" max="10" value="2">
+            <button id="set-teams">Set Teams</button>
+        </div>
+        <div id="team-forms"></div>
+        <div id="team-names" class="hidden"></div>
+
+        <!-- Word Input Section -->
+        <div id="word-input-section" class="hidden">
+            <div id="current-player"></div>
+            <form id="word-input-form">
+                <label>Animal: <input type="text" id="animal"></label><br>
+                <label>Profession: <input type="text" id="profession"></label><br>
+                <label>Famous Person: <input type="text" id="famousPerson"></label><br>
+                <label>Object: <input type="text" id="object"></label><br>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+
+        <!-- Round Section -->
+        <div id="round-section" class="hidden">
+            <p>Round: <span id="current-round">1</span></p>
+            <p id="turn-info"></p>
+            <p>Time left: <span id="timer">60</span>s</p>
+            <div id="current-word"></div>
+            <button id="correct">Correct</button>
+            <button id="skip">Skip</button>
+            <button id="start-next-team" class="hidden">Start Next Team</button>
+        </div>
+
+        <!-- Results Section -->
+        <div id="results" class="hidden">
+            <div id="scores"></div>
+            <button id="restart">Restart</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

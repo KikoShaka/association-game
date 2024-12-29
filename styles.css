@@ -1,0 +1,195 @@
+/* Общи стилове */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #74ebd5, #9face6);
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Контейнер */
+.container {
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    overflow: hidden;
+}
+
+/* Общи стилове */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #74ebd5, #9face6);
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Центриране на заглавието */
+header {
+    text-align: center;
+    width: 100%;
+    margin: 0;
+    padding: 20px 0;
+    background: linear-gradient(to right, #9face6, #74ebd5);
+    color: white;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    position: fixed;
+    top: 0;
+}
+
+h1 {
+    font-size: 3rem;
+    margin: 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Контейнер за останалото съдържание */
+.container {
+    margin-top: 120px; /* Добавено разстояние, за да бъде под заглавието */
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    overflow: hidden;
+}
+
+
+/* Общи стилове за формуляри */
+label {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+input[type="text"],
+input[type="number"] {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 8px;
+    font-size: 1rem;
+    width: calc(100% - 20px);
+    margin-bottom: 15px;
+}
+
+input:focus {
+    border-color: #4e54c8;
+    outline: none;
+}
+
+/* Бутоните */
+button {
+    background-color: #4e54c8;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #6a63d3;
+}
+
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+/* Скрити елементи */
+.hidden {
+    display: none;
+}
+
+/* Рунд секция */
+#round-section {
+    background: #f8f9fa;
+    border: 1px solid #e2e3e5;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+#turn-info {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+#timer {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #e63946;
+    margin-bottom: 20px;
+}
+
+#current-word {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #4e54c8;
+    margin-bottom: 20px;
+}
+
+/* Секция за резултати */
+#results {
+    padding: 20px;
+}
+
+#scores {
+    margin-bottom: 20px;
+}
+
+#scores p {
+    font-size: 1.2rem;
+    color: #333;
+}
+
+/* Бутон "Start Next Team" */
+button#start-next-team {
+    background-color: #00bfa5;
+    color: #fff;
+    margin-top: 20px;
+}
+
+/* Медийни заявки за мобилни устройства */
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+
+    .container {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    button {
+        font-size: 0.9rem;
+    }
+
+    #timer {
+        font-size: 1.5rem;
+    }
+
+    #current-word {
+        font-size: 1.2rem;
+    }
+}
